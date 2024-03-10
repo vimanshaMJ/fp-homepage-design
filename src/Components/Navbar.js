@@ -3,25 +3,57 @@ import classes from "./Navbar.module.css";
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
-import IconButton from "@mui/material/IconButton";
 import Typography from "@mui/material/Typography";
-import Menu from "@mui/material/Menu";
-import MenuIcon from "@mui/icons-material/Menu";
 import Container from "@mui/material/Container";
 import Avatar from "@mui/material/Avatar";
-import Tooltip from "@mui/material/Tooltip";
-import AdbIcon from "@mui/icons-material/Adb";
 import avatar from "../Images/girl.png";
+import { styled, alpha } from "@mui/material/styles";
+import InputBase from "@mui/material/InputBase";
+import FavoriteBorderOutlinedIcon from "@mui/icons-material/FavoriteBorderOutlined";
+import { color } from "@mui/system";
+import Button from "@mui/material-next/Button";
+
+const Search = styled("div")(({ theme }) => ({
+  borderRadius: "50px",
+  position: "relative",
+  color: "grey",
+  borderRadius: theme.shape.borderRadius,
+  backgroundColor: alpha(theme.palette.common.white, 0.9),
+  "&:hover": {
+    backgroundColor: alpha(theme.palette.common.white, 0.7),
+  },
+  marginRight: theme.spacing(2),
+  marginLeft: 0,
+  width: "100%",
+  [theme.breakpoints.up("sm")]: {
+    marginLeft: theme.spacing(76),
+    width: "auto",
+  },
+}));
+
+const StyledInputBase = styled(InputBase)(({ theme }) => ({
+  fontFamily: "lato",
+  color: "inherit",
+  "& .MuiInputBase-input": {
+    // vertical padding + font size from searchIcon
+    paddingLeft: `calc(0.5em + ${theme.spacing(0.5)})`,
+    transition: theme.transitions.create("width"),
+    width: "100%",
+    [theme.breakpoints.up("md")]: {
+      width: "40ch",
+    },
+  },
+}));
 
 export default function Appbar() {
   return (
     <AppBar position="static" className={classes.appbar}>
-      <Container minWidth="xl">
+      <Container>
         <Toolbar>
           <Typography
             variant="h4"
             sx={{
-              display: { xs: "none", md: "flex" },
+              display: "flex",
               fontFamily: "lato",
               fontWeight: 700,
               color: "#5A189A",
@@ -30,11 +62,10 @@ export default function Appbar() {
             Funerals
             <span className={classes.span1}>page</span>.
           </Typography>
-          <br />
+
           <Typography
             variant="p"
             sx={{
-              display: { xs: "none", md: "flex" },
               fontFamily: "lato",
               fontWeight: 400,
               color: "black",
@@ -42,59 +73,65 @@ export default function Appbar() {
           >
             Making Memories Live
           </Typography>
-
-          <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
-            <IconButton
-              size="large"
-              aria-label="account of current user"
-              aria-controls="menu-appbar"
-              aria-haspopup="true"
-              color="inherit"
-            >
-              <MenuIcon />
-            </IconButton>
-            <Menu
-              id="menu-appbar"
-              anchorOrigin={{
-                vertical: "bottom",
-                horizontal: "left",
-              }}
-              keepMounted
-              transformOrigin={{
-                vertical: "top",
-                horizontal: "left",
-              }}
-              sx={{
-                display: { xs: "block", md: "none" },
-              }}
-            ></Menu>
-          </Box>
-          <AdbIcon sx={{ display: { xs: "flex", md: "none" }, mr: 1 }} />
-          <Typography
-            variant="h5"
-            noWrap
-            component="a"
-            href="#app-bar-with-responsive-menu"
+          <FavoriteBorderOutlinedIcon
+            sx={{ color: "#5A189A", padding: "0 2% 0 28%" }}
+          />
+          <Button
+            size="small"
+            variant="filled"
             sx={{
-              mr: 2,
-              display: { xs: "flex", md: "none" },
-              flexGrow: 1,
-              fontFamily: "monospace",
+              fontFamily: "lato",
+              fontSize: "0.7rem",
+              backgroundColor: "#5A189A",
+              color: "white",
+              marginRight: "2%",
               fontWeight: 700,
-              letterSpacing: ".3rem",
-              color: "inherit",
-              textDecoration: "none",
             }}
           >
-            LOGO
-          </Typography>
-          <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}></Box>
-
-          <Box sx={{ flexGrow: 0 }}>
+            {"LIST YOUR BUSINESS"}
+          </Button>
+          <Button
+            size="small"
+            variant="outlined"
+            sx={{
+              fontFamily: "lato",
+              fontSize: "0.7rem",
+              backgroundColor: "white",
+              color: "#5A189A",
+              border: "2px solid #5A189A",
+              paddingLeft: "3%",
+              paddingRight: "3%",
+              fontWeight: 700,
+            }}
+          >
+            {"NEWS FEED"}
+          </Button>
+          <Box sx={{ flexGrow: 1, display: "flex" }} className={classes.avatar}>
             <Avatar alt="" src={avatar} />
           </Box>
         </Toolbar>
       </Container>
+
+      <Toolbar sx={{ backgroundColor: "#5A189A" }}>
+        <Typography
+          variant="h5"
+          sx={{
+            display: "flex",
+            fontFamily: "lato",
+            fontWeight: 700,
+            color: "white",
+            paddingLeft: "13%",
+          }}
+        >
+          Obituaries
+        </Typography>
+        <Search>
+          <StyledInputBase
+            placeholder="Search"
+            inputProps={{ "aria-label": "search" }}
+          />
+        </Search>
+      </Toolbar>
     </AppBar>
   );
 }
