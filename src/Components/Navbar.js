@@ -10,8 +10,9 @@ import avatar from "../Images/girl.png";
 import { styled, alpha } from "@mui/material/styles";
 import InputBase from "@mui/material/InputBase";
 import FavoriteBorderOutlinedIcon from "@mui/icons-material/FavoriteBorderOutlined";
-import { border, color } from "@mui/system";
 import Button from "@mui/material-next/Button";
+import FilledButton from "./FilledButton";
+import OutlinedButton from "./OutlinedButton";
 
 const Search = styled("div")(({ theme }) => ({
   borderRadius: "50px",
@@ -78,38 +79,12 @@ export default function Appbar() {
           </Typography>
 
           <FavoriteBorderOutlinedIcon
-            sx={{ color: "#5A189A", padding: "0 2% 0 456px" }}
+            sx={{ color: "#5A189A", padding: "0 2% 0 423px" }}
           />
-          <Button
-            size="small"
-            variant="filled"
-            sx={{
-              fontFamily: "lato",
-              fontSize: "0.7rem",
-              backgroundColor: "#5A189A",
-              color: "white",
-              marginRight: "2%",
-              fontWeight: 700,
-            }}
-          >
-            {"LIST YOUR BUSINESS"}
-          </Button>
-          <Button
-            size="small"
-            variant="outlined"
-            sx={{
-              fontFamily: "lato",
-              fontSize: "0.7rem",
-              backgroundColor: "white",
-              color: "#5A189A",
-              border: "2px solid #5A189A",
-              paddingLeft: "3%",
-              paddingRight: "3%",
-              fontWeight: 700,
-            }}
-          >
-            {"NEWS FEED"}
-          </Button>
+
+          <FilledButton buttonText="LIST YOUR BUSINESS" />
+          <OutlinedButton buttonText="NEWS FEED" />
+
           <Box sx={{ flexGrow: 1, display: "flex" }} className={classes.avatar}>
             <Avatar alt="" src={avatar} />
           </Box>
