@@ -53,6 +53,7 @@ export default function Appbar() {
           <Typography
             variant="h4"
             sx={{
+              padding: "5px 0",
               fontFamily: "lato",
               fontWeight: 700,
               color: "#5A189A",
@@ -77,7 +78,7 @@ export default function Appbar() {
           </Typography>
 
           <FavoriteBorderOutlinedIcon
-            sx={{ color: "#5A189A", padding: "0 2% 0 28%" }}
+            sx={{ color: "#5A189A", padding: "0 2% 0 465px" }}
           />
           <Button
             size="small"
