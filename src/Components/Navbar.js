@@ -10,7 +10,7 @@ import avatar from "../Images/girl.png";
 import { styled, alpha } from "@mui/material/styles";
 import InputBase from "@mui/material/InputBase";
 import FavoriteBorderOutlinedIcon from "@mui/icons-material/FavoriteBorderOutlined";
-import { color } from "@mui/system";
+import { border, color } from "@mui/system";
 import Button from "@mui/material-next/Button";
 
 const Search = styled("div")(({ theme }) => ({
@@ -53,7 +53,6 @@ export default function Appbar() {
           <Typography
             variant="h4"
             sx={{
-              display: "flex",
               fontFamily: "lato",
               fontWeight: 700,
               color: "#5A189A",
@@ -61,18 +60,22 @@ export default function Appbar() {
           >
             Funerals
             <span className={classes.span1}>page</span>.
+            <br />
+            <Typography
+              variant="p"
+              sx={{
+                display: "flex",
+
+                fontFamily: "lato",
+                fontWeight: 400,
+                color: "black",
+                fontSize: "0.8rem",
+              }}
+            >
+              Making Memories Live
+            </Typography>
           </Typography>
 
-          <Typography
-            variant="p"
-            sx={{
-              fontFamily: "lato",
-              fontWeight: 400,
-              color: "black",
-            }}
-          >
-            Making Memories Live
-          </Typography>
           <FavoriteBorderOutlinedIcon
             sx={{ color: "#5A189A", padding: "0 2% 0 28%" }}
           />
