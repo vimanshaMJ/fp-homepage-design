@@ -10,12 +10,10 @@ import avatar from "../Images/girl.png";
 import { styled, alpha } from "@mui/material/styles";
 import InputBase from "@mui/material/InputBase";
 import FavoriteBorderOutlinedIcon from "@mui/icons-material/FavoriteBorderOutlined";
-import Button from "@mui/material-next/Button";
 import FilledButton from "./FilledButton";
 import OutlinedButton from "./OutlinedButton";
 
 const Search = styled("div")(({ theme }) => ({
-  borderRadius: "50px",
   position: "relative",
   color: "grey",
   borderRadius: theme.shape.borderRadius,
@@ -27,7 +25,7 @@ const Search = styled("div")(({ theme }) => ({
   marginLeft: 0,
   width: "100%",
   [theme.breakpoints.up("sm")]: {
-    marginLeft: theme.spacing(76),
+    marginLeft: theme.spacing(70),
     width: "auto",
   },
 }));
@@ -41,7 +39,7 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
     transition: theme.transitions.create("width"),
     width: "100%",
     [theme.breakpoints.up("md")]: {
-      width: "40ch",
+      width: "44ch",
     },
   },
 }));
