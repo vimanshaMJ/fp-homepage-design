@@ -54,7 +54,8 @@ export default function Appbar() {
           <Typography
             variant="h4"
             sx={{
-              padding: "5px 0",
+              paddingTop: "10px",
+              paddingBottom: "15px",
               fontFamily: "lato",
               fontWeight: 700,
               color: "#5A189A",
@@ -67,7 +68,7 @@ export default function Appbar() {
               variant="p"
               sx={{
                 display: "flex",
-
+                lineHeight: 0.5,
                 fontFamily: "lato",
                 fontWeight: 400,
                 color: "black",
