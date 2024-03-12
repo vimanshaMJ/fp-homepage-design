@@ -1,0 +1,14 @@
+.sidebardiv {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.icon {
+  color: #5a189a;
+}
+h4 {
+  padding: 0 5%;
+  color: black;
+  font-size: large;
+  font-weight: 500;
+}
