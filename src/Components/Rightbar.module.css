@@ -1,0 +1,8 @@
+.cardBox {
+  display: flex;
+  flex-direction: column;
+}
+img {
+  width: 30%;
+  padding: 5%;
+}
