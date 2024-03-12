@@ -9,47 +9,13 @@ import classes from "./Rightbar.module.css";
 import { Typography } from "@mui/material";
 
 export default function Rightbar() {
-  const cardList = [
-    {
-      id: 1,
-      image: card1,
-      description: "Frazer’s Holiday Remembrance Ornaments",
-      link: "Read More >",
-    },
-    {
-      id: 2,
-      image: card2,
-      description: "Frazer’s Holiday Remembrance Ornaments",
-      link: "Read More >",
-    },
-    {
-      id: 3,
-      image: card3,
-      description: "Frazer’s Holiday Remembrance Ornaments",
-      link: "Read More >",
-    },
-    {
-      id: 4,
-      image: card4,
-      description: "Frazer’s Holiday Remembrance Ornaments",
-      link: "Read More >",
-    },
-    {
-      id: 5,
-      image: card5,
-      description: "Frazer’s Holiday Remembrance Ornaments",
-      link: "Read More >",
-    },
-  ];
-
-  return cardList.map((item) => (
+  return (
     <Box
       sx={{
         display: "flex",
         flexDirection: "column",
         textAlign: "left",
         width: "18%",
-        key: item.id,
       }}
     >
       <Box
@@ -59,7 +25,7 @@ export default function Rightbar() {
           alignItems: "center",
         }}
       >
-        <img src={item.image} alt="" />
+        <img src={card1} alt="" />
         <Box
           sx={{
             display: "flex",
@@ -67,17 +33,14 @@ export default function Rightbar() {
             paddingTop: "10px",
           }}
         >
-          <Typography
-            variant="h5"
-            sx={{ paddingRight: "15px", fontWeight: "500" }}
-          >
-            {item.description}
+          <h5 className={classes.cardDesc}>
+            Frazer’s Holiday Remembrance Ornaments <br />
             <span>
-              <a href="">{item.link}</a>
+              <a href="">Read More {">"}</a>
             </span>
-          </Typography>
+          </h5>
         </Box>
       </Box>
     </Box>
-  ));
+  );
 }
