@@ -2,6 +2,12 @@
   display: flex;
   flex-direction: row;
   align-items: center;
+  padding: 0 2%;
+}
+.sidebardiv:hover {
+  background-color: #f5ebff;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
 }
 .icon {
   color: #5a189a;

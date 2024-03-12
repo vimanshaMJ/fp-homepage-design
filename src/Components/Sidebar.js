@@ -6,6 +6,7 @@ import VolunteerActivismIcon from "@mui/icons-material/VolunteerActivism";
 import GavelIcon from "@mui/icons-material/Gavel";
 import DrawIcon from "@mui/icons-material/Draw";
 import AccountCircleIcon from "@mui/icons-material/AccountCircle";
+import ContactsIcon from "@mui/icons-material/Contacts";
 
 export default function Sidebar() {
   return (
@@ -14,8 +15,8 @@ export default function Sidebar() {
         display: "flex",
         flexDirection: "column",
         textAlign: "left",
-        width: "20%",
-        padding: "2% 0 2% 14%",
+        width: "18%",
+        padding: "2% 0 2% 13.5%",
       }}
     >
       <div className={classes.sidebardiv}>
@@ -41,6 +42,11 @@ export default function Sidebar() {
       <div className={classes.sidebardiv}>
         <AccountCircleIcon className={classes.icon} />
         <h4>Funeral Directors</h4>
+      </div>
+
+      <div className={classes.sidebardiv}>
+        <ContactsIcon className={classes.icon} />
+        <h4>Obituaries</h4>
       </div>
     </Box>
   );
