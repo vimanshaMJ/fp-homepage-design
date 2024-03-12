@@ -9,7 +9,6 @@ export default function Feed() {
         flexDirection: "column",
         textAlign: "left",
         width: "35%",
-        border: "solid",
       }}
     ></Box>
   );
