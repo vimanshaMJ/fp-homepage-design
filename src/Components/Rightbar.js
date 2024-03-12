@@ -18,6 +18,7 @@ export default function Rightbar() {
         sx={{
           display: "flex",
           flexDirection: "row",
+          alignItems: "center",
         }}
       >
         <img src={card1} alt="" />
@@ -25,14 +26,15 @@ export default function Rightbar() {
           sx={{
             display: "flex",
             flexDirection: "column",
+            paddingTop: "10px",
           }}
         >
           <h5 className={classes.cardDesc}>
-            Frazer’s Holiday Remembrance Ornaments{" "}
+            Frazer’s Holiday Remembrance Ornaments <br />
+            <span>
+              <a href="">Read More {">"}</a>
+            </span>
           </h5>
-          <a href="#" className={classes.cardLink}>
-            <h5>Read More</h5>{" "}
-          </a>
         </Box>
       </Box>
     </Box>

@@ -4,5 +4,17 @@
 }
 img {
   width: 30%;
+  height: 60%;
   padding: 5%;
+}
+.cardDesc {
+  padding-right: 15px;
+  font-weight: 500;
+}
+
+a {
+  line-height: 3;
+  text-decoration: none;
+  color: #5a189a;
+  font-weight: 500;
 }
