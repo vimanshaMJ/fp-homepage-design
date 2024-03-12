@@ -15,7 +15,7 @@ export default function Sidebar() {
         flexDirection: "column",
         textAlign: "left",
         width: "20%",
-        padding: "2% 0 2% 2%",
+        padding: "2% 0 2% 14%",
       }}
     >
       <div className={classes.sidebardiv}>
