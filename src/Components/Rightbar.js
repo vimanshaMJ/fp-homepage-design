@@ -7,6 +7,7 @@ import card4 from "../Images/card4.png";
 import card5 from "../Images/card5.png";
 import classes from "./Rightbar.module.css";
 import FilledButton from "./FilledButton";
+import NavigateNextIcon from "@mui/icons-material/NavigateNext";
 
 export default function Rightbar() {
   return (
@@ -68,7 +69,7 @@ function CardComponent({ image, title }) {
         <h5 className={classes.cardDesc}>
           {title} <br />
           <span>
-            <a href="">Read More {">"}</a>
+            <a href="">Read More{" >"}</a>
           </span>
         </h5>
       </Box>

@@ -31,7 +31,7 @@ export default function Sidebar() {
 
       <div className={classes.sidebardiv}>
         <GavelIcon className={classes.icon} />
-        <h4>Law & advice</h4>
+        <h4>Law & Advice</h4>
       </div>
 
       <div className={classes.sidebardiv}>
