@@ -6,6 +6,7 @@ import card3 from "../Images/card3.png";
 import card4 from "../Images/card4.png";
 import card5 from "../Images/card5.png";
 import classes from "./Rightbar.module.css";
+import FilledButton from "./FilledButton";
 
 export default function Rightbar() {
   return (
@@ -13,9 +14,9 @@ export default function Rightbar() {
       sx={{
         display: "flex",
         flexDirection: "column",
-        textAlign: "left",
         width: "18%",
         margin: "50px 0",
+        paddingBottom: "20px",
         border: "1px solid #E5E5E5",
       }}
     >
@@ -38,6 +39,10 @@ export default function Rightbar() {
       <CardComponent
         image={card5}
         title="Frazer’s Holiday Remembrance Ornaments "
+      />
+      <FilledButton
+        buttonText={"View All Stories"}
+        className={classes.cardBtn}
       />
     </Box>
   );

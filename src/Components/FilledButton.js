@@ -1,10 +1,11 @@
 import React from "react";
 import Button from "@mui/material-next/Button";
 
-export default function FilledButton({ buttonText }) {
+export default function FilledButton({ buttonText, className }) {
   return (
     <div>
       <Button
+        className={className}
         size="small"
         variant="filled"
         sx={{

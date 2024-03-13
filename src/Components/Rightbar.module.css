@@ -6,6 +6,7 @@ img {
 .cardDesc {
   padding-right: 30px;
   font-weight: 500;
+  text-align: left;
 }
 
 a {
@@ -13,4 +14,11 @@ a {
   text-decoration: none;
   color: #5a189a;
   font-weight: 500;
+}
+.cardBtn {
+  background-color: #f2e4ff !important;
+  color: #5a189a !important;
+  align-self: center !important;
+  width: 85% !important;
+  font-size: small !important;
 }
