@@ -7,71 +7,93 @@ import card4 from "../Images/card4.png";
 import card5 from "../Images/card5.png";
 import classes from "./Rightbar.module.css";
 import FilledButton from "./FilledButton";
-import NavigateNextIcon from "@mui/icons-material/NavigateNext";
 
-export default function Rightbar() {
+function CardComponent(item) {
   return (
     <Box
       sx={{
         display: "flex",
-        flexDirection: "column",
-        width: "18%",
-        margin: "50px 0",
-        paddingBottom: "20px",
-        border: "1px solid #E5E5E5",
+        alignItems: "center",
       }}
     >
-      <CardComponent
-        image={card1}
-        title="Frazer’s Holiday Remembrance Ornaments"
-      />
-      <CardComponent
-        image={card2}
-        title="Contemplating life from the viewpoint of a funeral director"
-      />
-      <CardComponent
-        image={card3}
-        title="Frazer’s Holiday Remembrance Ornaments "
-      />
-      <CardComponent
-        image={card4}
-        title="Is Human Composting the Future of Deathcare? "
-      />
-      <CardComponent
-        image={card5}
-        title="Frazer’s Holiday Remembrance Ornaments "
-      />
-      <FilledButton
-        buttonText={"View All Stories"}
-        className={classes.cardBtn}
-      />
+      <img src={item.image} alt="" />
+      <Box
+        sx={{
+          paddingTop: "10px",
+          display: "flex",
+        }}
+      >
+        <h5 className={classes.cardDesc}>
+          {item.description} <br />
+          <span>
+            <a href="">{item.link}</a>
+          </span>
+        </h5>
+      </Box>
     </Box>
   );
 }
 
-function CardComponent({ image, title }) {
+export default function Rightbar() {
+  const cardList = [
+    {
+      id: 1,
+      image: card1,
+      description: "Frazer’s Holiday Remembrance Ornaments",
+      link: "Read More >",
+    },
+    {
+      id: 2,
+      image: card2,
+      description:
+        "Contemplating life from the viewpoint of a funeral director",
+      link: "Read More >",
+    },
+    {
+      id: 3,
+      image: card3,
+      description: "Frazer’s Holiday Remembrance Ornaments",
+      link: "Read More >",
+    },
+    {
+      id: 4,
+      image: card4,
+      description: "Is Human Composting the Future of Deathcare?",
+      link: "Read More >",
+    },
+    {
+      id: 5,
+      image: card5,
+      description: "Frazer’s Holiday Remembrance Ornaments",
+      link: "Read More >",
+    },
+  ];
+
   return (
-    <Box
-      sx={{
-        display: "flex",
-        flexDirection: "row",
-        alignItems: "center",
-      }}
-    >
-      <img src={image} alt="" />
+    <Box sx={{ width: "30%", paddingRight: "14%" }}>
       <Box
         sx={{
           display: "flex",
           flexDirection: "column",
-          paddingTop: "10px",
+          margin: "50px 0",
+          paddingBottom: "20px",
+          border: "1px solid #E5E5E5",
         }}
       >
-        <h5 className={classes.cardDesc}>
-          {title} <br />
-          <span>
-            <a href="">Read More{" >"}</a>
-          </span>
-        </h5>
+        <Box>
+          {cardList.map((item) => (
+            <CardComponent
+              key={item.id}
+              image={item.image}
+              description={item.description}
+              link={item.link}
+            />
+          ))}
+        </Box>
+        <FilledButton
+          buttonText={"View All Stories"}
+          className={classes.cardBtn}
+        />
       </Box>
     </Box>
   );
