@@ -13,9 +13,10 @@
 .icon {
   color: #5a189a;
 }
-h4 {
+.sidebarTitle {
+  line-height: 0;
   padding: 0 5%;
   color: black;
-  font-size: large;
+  font-size: medium;
   font-weight: 500;
 }

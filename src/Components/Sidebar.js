@@ -15,38 +15,38 @@ export default function Sidebar() {
         display: "flex",
         flexDirection: "column",
         textAlign: "left",
-        width: "18%",
-        padding: "2% 0 2% 13.5%",
+        width: "16%",
+        padding: "50px 0 50px 200px",
       }}
     >
       <div className={classes.sidebardiv}>
         <TodayIcon className={classes.icon} />
-        <h4>Plan Ahead</h4>
+        <h5 className={classes.sidebarTitle}>Plan Ahead</h5>
       </div>
 
       <div className={classes.sidebardiv}>
         <VolunteerActivismIcon className={classes.icon} />
-        <h4>Bereavement Support</h4>
+        <h5 className={classes.sidebarTitle}>Bereavement Support</h5>
       </div>
 
       <div className={classes.sidebardiv}>
         <GavelIcon className={classes.icon} />
-        <h4>Law & Advice</h4>
+        <h5 className={classes.sidebarTitle}>Law & Advice</h5>
       </div>
 
       <div className={classes.sidebardiv}>
         <DrawIcon className={classes.icon} />
-        <h4>Funeral Wishes</h4>
+        <h5 className={classes.sidebarTitle}>Funeral Wishes</h5>
       </div>
 
       <div className={classes.sidebardiv}>
         <AccountCircleIcon className={classes.icon} />
-        <h4>Funeral Directors</h4>
+        <h5 className={classes.sidebarTitle}>Funeral Directors</h5>
       </div>
 
       <div className={classes.sidebardiv}>
         <ContactsIcon className={classes.icon} />
-        <h4>Obituaries</h4>
+        <h5 className={classes.sidebarTitle}>Obituaries</h5>
       </div>
     </Box>
   );

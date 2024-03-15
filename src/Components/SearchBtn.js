@@ -37,7 +37,7 @@ export default function SearchBtn() {
   return (
     <Search>
       <StyledInputBase
-        placeholder="Search"
+        placeholder={"Search"}
         inputProps={{ "aria-label": "search" }}
       />
     </Search>
