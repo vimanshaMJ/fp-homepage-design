@@ -15,7 +15,7 @@ export default function FilledButton({ buttonText, className }) {
           color: "white",
           padding: "10px 30px",
           marginRight: "10px",
-          fontWeight: 700,
+          fontWeight: "bold",
         }}
       >
         {buttonText}

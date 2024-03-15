@@ -7,6 +7,9 @@ import card4 from "../Images/card4.png";
 import card5 from "../Images/card5.png";
 import classes from "./Rightbar.module.css";
 import FilledButton from "./FilledButton";
+import { Typography } from "@mui/material";
+import img2 from "../Images/img2.png";
+import birksLogo from "../Images/birksLogo.png";
 
 function CardComponent(item) {
   return (
@@ -70,13 +73,14 @@ export default function Rightbar() {
   ];
 
   return (
-    <Box sx={{ width: "30%", paddingRight: "14%" }}>
+    <Box sx={{ width: "18%" }}>
       <Box
         sx={{
           display: "flex",
           flexDirection: "column",
-          margin: "50px 0",
+          margin: "50px 0 20px 0",
           paddingBottom: "20px",
+          paddingRight: "0px",
           border: "1px solid #E5E5E5",
         }}
       >
@@ -93,6 +97,48 @@ export default function Rightbar() {
         <FilledButton
           buttonText={"View All Stories"}
           className={classes.cardBtn}
+        />
+      </Box>
+
+      <Box
+        sx={{
+          margin: "10px 0",
+          paddingBottom: "20px",
+          backgroundImage: `url(${img2})`,
+          textAlign: "left",
+        }}
+      >
+        <img src={birksLogo} alt="" className={classes.birksLogo} />
+        <Typography
+          variant="h4"
+          sx={{
+            color: "white",
+            padding: "20px 20px 0 20px",
+            fontSize: "2.2rem",
+            fontWeight: "600",
+            lineHeight: "1.2",
+            fontFamily: "lato",
+          }}
+        >
+          We Are Here For You...
+        </Typography>
+        <Typography
+          variant="h6"
+          sx={{
+            color: "#BEB8B8",
+            padding: "20px",
+            fontSize: "1rem",
+            lineHeight: "1.5",
+            fontFamily: "lato",
+          }}
+        >
+          Venenatis, quis risus justo, nisl, lorem venenatis. Nunc, pulvinar
+          amet in odio ac tellus
+        </Typography>
+
+        <FilledButton
+          buttonText={"CALL US NOW"}
+          className={classes.callNowBtn}
         />
       </Box>
     </Box>

@@ -17,7 +17,18 @@ a {
 .cardBtn {
   background-color: #f2e4ff !important;
   color: #5a189a !important;
-  align-self: center !important;
   width: 85% !important;
   font-size: small !important;
+}
+.birksLogo {
+  padding: 160px 0 0 20px;
+  width: 60px;
+  height: 60px;
+}
+.callNowBtn {
+  background-color: white !important;
+  color: #2708a6 !important;
+  width: 80% !important;
+  font-size: small !important;
+  margin: 5px 25px !important;
 }
