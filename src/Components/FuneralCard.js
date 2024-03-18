@@ -7,6 +7,10 @@ import manImg from "../Images/man.png";
 import FmdGoodIcon from "@mui/icons-material/FmdGood";
 import FilledButton from "./FilledButton";
 import MoreVertIcon from "@mui/icons-material/MoreVert";
+import facebook from "../Images/facebook.png";
+import twitter from "../Images/twitter.png";
+import youtube from "../Images/youtube.png";
+import instagram from "../Images/instagram.png";
 
 export default function FuneralCard() {
   return (
@@ -46,7 +50,7 @@ export default function FuneralCard() {
             Chadwick Brown
           </Typography>
 
-          <Typography variant="p" sx={{ fontSize: "small" }}>
+          <Typography variant="p" sx={{ fontSize: "small", color: "#868282" }}>
             Born:
             <span className={classes.span1}>
               12 <sup>th</sup> January 1989
@@ -70,6 +74,36 @@ export default function FuneralCard() {
 
         <FilledButton buttonText={"Donate"} className={classes.donateBtn} />
         <MoreVertIcon sx={{ marginTop: "-15px" }} />
+      </Box>
+
+      <Typography
+        variant="h5"
+        sx={{
+          color: "#868282",
+          padding: "20px 20px 0 20px",
+          fontSize: "0.95rem",
+          fontFamily: "lato",
+          lineHeight: "1.5",
+        }}
+      >
+        Venenatis, quis risus justo, nisl, lorem venenatis. Nunc, pulvinar amet
+        in odio ac tellus suscipit. Nibh commodo auctor vivamus id tincidunt.
+        Venenatis, quis risus justo, nisl, lorem venenatis. Nunc, pulvinar amet
+        in odio ac tellus suscipit. Nibh commodo auctor vivamus id tincidunt.{" "}
+        <a href="" className={classes.feedLink}>
+          Read More
+        </a>
+      </Typography>
+
+      <Box>
+        <img src={facebook} alt="" className={classes.socialIcon} />
+        <img src={twitter} alt="" className={classes.socialIcon} />
+        <img src={instagram} alt="" className={classes.socialIcon} />
+        <img src={youtube} alt="" className={classes.socialIcon} />
+
+        <a href="" className={classes.feedLink}>
+          Bibliography
+        </a>
       </Box>
     </Box>
   );

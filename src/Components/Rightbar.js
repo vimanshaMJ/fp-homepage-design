@@ -29,7 +29,9 @@ function CardComponent(item) {
         <h5 className={classes.cardDesc}>
           {item.description} <br />
           <span>
-            <a href="">{item.link}</a>
+            <a href="" className={classes.rightbarLink}>
+              {item.link}
+            </a>
           </span>
         </h5>
       </Box>
