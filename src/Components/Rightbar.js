@@ -82,6 +82,7 @@ export default function Rightbar() {
           paddingBottom: "20px",
           paddingRight: "0px",
           border: "1px solid #E5E5E5",
+          borderRadius: "8px",
         }}
       >
         <Box>
