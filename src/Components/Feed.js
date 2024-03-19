@@ -18,6 +18,8 @@ export default function Feed() {
       <TheDatePicker label={"To"} />
       <FilledButton buttonText={"Place a Notice"} /> */}
       <FuneralCard />
+      <FuneralCard />
+      <FuneralCard />
     </Box>
   );
 }

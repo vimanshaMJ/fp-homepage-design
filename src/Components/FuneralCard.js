@@ -26,6 +26,7 @@ export default function FuneralCard() {
         fontFamily: "lato",
         border: "1px solid #E5E5E5",
         borderRadius: "8px",
+        marginBottom: "20px",
       }}
     >
       <Typography variant="p" sx={{ display: "flex", alignItems: "center" }}>
