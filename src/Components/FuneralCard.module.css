@@ -42,3 +42,15 @@
   border: 1px solid #f2e4ff;
   margin: 0px 0 20px 0;
 }
+.reactIcons {
+  width: 50px;
+  padding: 0 0 15px 15px;
+}
+.heart {
+  width: 30px;
+  padding: 0 0 15px 100px;
+}
+.eye {
+  width: 50px;
+  padding: 0 0 20px 15px;
+}

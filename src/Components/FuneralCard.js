@@ -11,6 +11,13 @@ import facebook from "../Images/facebook.png";
 import twitter from "../Images/twitter.png";
 import youtube from "../Images/youtube.png";
 import instagram from "../Images/instagram.png";
+import rose from "../Images/rose.png";
+import candle from "../Images/candle.png";
+import flowers from "../Images/flowers.png";
+import ribbon from "../Images/ribbon.png";
+import heart from "../Images/heart.png";
+import comment from "../Images/comment.png";
+import eye from "../Images/eye.png";
 
 export default function FuneralCard() {
   return (
@@ -106,6 +113,14 @@ export default function FuneralCard() {
         </a>
       </Box>
       <hr className={classes.hrLine} />
+
+      <img src={rose} alt="" className={classes.reactIcons} />
+      <img src={candle} alt="" className={classes.reactIcons} />
+      <img src={flowers} alt="" className={classes.reactIcons} />
+      <img src={ribbon} alt="" className={classes.reactIcons} />
+      <img src={heart} alt="" className={classes.heart} />
+      <img src={comment} alt="" className={classes.reactIcons} />
+      <img src={eye} alt="" className={classes.eye} />
     </Box>
   );
 }
