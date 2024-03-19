@@ -104,7 +104,7 @@ export default function FuneralCard() {
         </a>
       </Typography>
 
-      <Box sx={{ display: "flex" }}>
+      <Box sx={{ display: "flex", alignItems: "center" }}>
         <img src={facebook} alt="" className={classes.socialIcon} />
         <img src={twitter} alt="" className={classes.socialIcon} />
         <img src={instagram} alt="" className={classes.socialIcon} />

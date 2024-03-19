@@ -4,6 +4,7 @@ import { Box, Stack } from "@mui/system";
 import Sidebar from "../Components/Sidebar";
 import Feed from "../Components/Feed";
 import Rightbar from "../Components/Rightbar";
+import Footer from "../Components/Footer";
 
 export default function Homepage() {
   return (
@@ -14,6 +15,7 @@ export default function Homepage() {
         <Feed />
         <Rightbar />
       </Stack>
+      <Footer />
     </Box>
   );
 }

@@ -19,6 +19,7 @@ export default function Feed() {
       {/* <TheDatePicker label={"From"} />
       <TheDatePicker label={"To"} />
       <FilledButton buttonText={"Place a Notice"} /> */}
+
       <FuneralCard />
       <FuneralCard />
       <SidaPost />
