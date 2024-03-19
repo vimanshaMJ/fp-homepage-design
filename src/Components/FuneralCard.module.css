@@ -27,9 +27,18 @@
   padding: 0;
   margin: 10px 0 20px 20px;
 }
-.feedLink {
+.readMore {
   color: #720cd4;
   font-weight: 600;
   text-decoration: none;
   border-bottom: 1px solid #720cd4;
+}
+.bibliograpy {
+  color: #720cd4;
+  font-weight: 600;
+  margin: 15px 0 0 240px;
+}
+.hrLine {
+  border: 1px solid #f2e4ff;
+  margin: 0px 0 20px 0;
 }

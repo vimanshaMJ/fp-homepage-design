@@ -90,21 +90,22 @@ export default function FuneralCard() {
         in odio ac tellus suscipit. Nibh commodo auctor vivamus id tincidunt.
         Venenatis, quis risus justo, nisl, lorem venenatis. Nunc, pulvinar amet
         in odio ac tellus suscipit. Nibh commodo auctor vivamus id tincidunt.{" "}
-        <a href="" className={classes.feedLink}>
+        <a href="" className={classes.readMore}>
           Read More
         </a>
       </Typography>
 
-      <Box>
+      <Box sx={{ display: "flex" }}>
         <img src={facebook} alt="" className={classes.socialIcon} />
         <img src={twitter} alt="" className={classes.socialIcon} />
         <img src={instagram} alt="" className={classes.socialIcon} />
         <img src={youtube} alt="" className={classes.socialIcon} />
 
-        <a href="" className={classes.feedLink}>
+        <a href="" className={classes.bibliograpy}>
           Bibliography
         </a>
       </Box>
+      <hr className={classes.hrLine} />
     </Box>
   );
 }
