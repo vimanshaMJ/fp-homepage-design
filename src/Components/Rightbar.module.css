@@ -28,6 +28,7 @@ img {
 .callNowBtn {
   background-color: white !important;
   color: #2708a6 !important;
+  font-weight: 900 !important;
   width: 80% !important;
   font-size: small !important;
   margin: 5px 25px !important;

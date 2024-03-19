@@ -1,0 +1,14 @@
+.sidaLogo {
+  width: 150px;
+  padding: 20px;
+  margin: 0 0 10px 15px;
+}
+.callNowBtn {
+  background-color: white !important;
+  color: #2708a6 !important;
+  font-weight: 900 !important;
+  width: 60% !important;
+  font-size: small !important;
+  margin: 40px 10px 0 150px !important;
+  padding: 10px !important;
+}
