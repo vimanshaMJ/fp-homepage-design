@@ -1,4 +1,5 @@
 import React from "react";
+import classes from "./Feed.module.css";
 import Box from "@mui/material/Box";
 import FilledButton from "./FilledButton";
 import SearchBtn from "./SearchBtn";
@@ -22,6 +23,13 @@ export default function Feed() {
       <FuneralCard />
       <SidaPost />
       <FuneralCard />
+
+      <a href="" className={classes.previous}>
+        Previous
+      </a>
+      <a href="" className={classes.next}>
+        Next
+      </a>
     </Box>
   );
 }

@@ -5,3 +5,17 @@
   border-radius: 50px;
   padding: 0;
 }
+.previous {
+  color: #720cd4;
+  font-weight: 600;
+  text-decoration: none;
+  border-bottom: 1px solid #720cd4;
+  margin-left: 78%;
+  margin-right: 20px;
+}
+.next {
+  color: #720cd4;
+  font-weight: 600;
+  text-decoration: none;
+  border-bottom: 1px solid #720cd4;
+}
