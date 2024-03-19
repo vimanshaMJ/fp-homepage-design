@@ -27,6 +27,7 @@ export default function FuneralCard() {
         border: "1px solid #E5E5E5",
         borderRadius: "8px",
         marginBottom: "20px",
+        boxShadow: "0px 4px 4px rgba(0, 0, 0, 0.1)",
       }}
     >
       <Typography variant="p" sx={{ display: "flex", alignItems: "center" }}>
@@ -120,7 +121,9 @@ export default function FuneralCard() {
       <img src={flowers} alt="" className={classes.reactIcons} />
       <img src={ribbon} alt="" className={classes.reactIcons} />
       <img src={heart} alt="" className={classes.heart} />
-      <img src={comment} alt="" className={classes.reactIcons} />
+      <a href="">
+        <img src={comment} alt="" className={classes.reactIcons} />
+      </a>
       <img src={eye} alt="" className={classes.eye} />
     </Box>
   );

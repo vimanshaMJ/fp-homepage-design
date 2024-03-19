@@ -4,6 +4,7 @@ import FilledButton from "./FilledButton";
 import SearchBtn from "./SearchBtn";
 import TheDatePicker from "./DatePicker";
 import FuneralCard from "./FuneralCard";
+import SidaPost from "./SidaPost";
 
 export default function Feed() {
   return (
@@ -19,6 +20,7 @@ export default function Feed() {
       <FilledButton buttonText={"Place a Notice"} /> */}
       <FuneralCard />
       <FuneralCard />
+      <SidaPost />
       <FuneralCard />
     </Box>
   );
