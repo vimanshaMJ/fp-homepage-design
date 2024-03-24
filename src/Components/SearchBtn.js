@@ -14,7 +14,12 @@ export default function SearchBtn() {
     marginRight: theme.spacing(4),
     marginLeft: 0,
     width: "100%",
-    [theme.breakpoints.up("sm")]: {
+
+    [theme.breakpoints.up("md")]: {
+      marginLeft: theme.spacing(20),
+      width: "100%",
+    },
+    [theme.breakpoints.up("lg")]: {
       marginLeft: theme.spacing(70),
       width: "auto",
     },
