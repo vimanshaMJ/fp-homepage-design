@@ -24,6 +24,7 @@ export default function Appbar() {
               fontFamily: "lato",
               fontWeight: 700,
               color: "#5A189A",
+              fontSize: "2rem",
             }}
           >
             Funerals
@@ -37,7 +38,7 @@ export default function Appbar() {
                 fontFamily: "lato",
                 fontWeight: 400,
                 color: "black",
-                fontSize: "0.8rem",
+                fontSize: "1rem",
               }}
             >
               Making Memories Live
@@ -45,7 +46,7 @@ export default function Appbar() {
           </Typography>
 
           <FavoriteBorderOutlinedIcon
-            sx={{ color: "#5A189A", padding: "0 2% 0 420px" }}
+            sx={{ color: "#5A189A", padding: "0 2% 0 430px" }}
           />
 
           <FilledButton buttonText="LIST YOUR BUSINESS" />
