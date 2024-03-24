@@ -11,7 +11,7 @@ export default function Feed() {
   return (
     <Box
       sx={{
-        width: "36%",
+        flex: "2",
         textAlign: "left",
         margin: "50px 20px",
       }}

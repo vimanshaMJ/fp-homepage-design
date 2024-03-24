@@ -75,7 +75,7 @@ export default function Rightbar() {
   ];
 
   return (
-    <Box sx={{ width: "18%" }}>
+    <Box sx={{ flex: "1" }}>
       <Box
         sx={{
           display: "flex",

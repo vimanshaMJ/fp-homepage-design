@@ -13,10 +13,11 @@ export default function Sidebar() {
     <Box
       sx={{
         display: "flex",
+        flex: "1",
         flexDirection: "column",
         textAlign: "left",
-        width: "16%",
-        padding: "50px 0 50px 200px",
+
+        padding: "50px 0 50px 0",
       }}
     >
       <div className={classes.sidebardiv}>
