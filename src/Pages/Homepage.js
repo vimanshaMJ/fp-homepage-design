@@ -8,16 +8,16 @@ import Footer from "../Components/Footer";
 
 export default function Homepage() {
   return (
-    <Container>
-      <Box>
-        <Appbar />
+    <Box>
+      <Appbar />
+      <Container>
         <Stack direction="row">
           <Sidebar />
           <Feed />
           <Rightbar />
         </Stack>
-        <Footer />
-      </Box>
-    </Container>
+      </Container>
+      <Footer />
+    </Box>
   );
 }

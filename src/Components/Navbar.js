@@ -58,21 +58,24 @@ export default function Appbar() {
       </Container>
 
       <Toolbar sx={{ backgroundColor: "#5A189A" }}>
-        <Typography
-          variant="h5"
-          sx={{
-            padding: "10px 0 15px 0",
-            display: "flex",
-            fontFamily: "lato",
-            fontWeight: 700,
-            color: "white",
-            paddingLeft: "13%",
-          }}
-        >
-          Obituaries
-        </Typography>
-
-        <SearchBtn />
+        <Container>
+          <Box sx={{ flexGrow: 1, display: "flex", alignItems: "center" }}>
+            <Typography
+              variant="h5"
+              sx={{
+                fontFamily: "lato",
+                fontWeight: 700,
+                color: "white",
+                paddingLeft: "2%",
+                flexGrow: 1,
+                textAlign: "center",
+              }}
+            >
+              Obituaries
+            </Typography>
+            <SearchBtn />
+          </Box>
+        </Container>
       </Toolbar>
     </AppBar>
   );

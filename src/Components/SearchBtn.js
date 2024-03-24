@@ -11,7 +11,7 @@ export default function SearchBtn() {
     "&:hover": {
       backgroundColor: alpha(theme.palette.common.white, 0.7),
     },
-    marginRight: theme.spacing(2),
+    marginRight: theme.spacing(4),
     marginLeft: 0,
     width: "100%",
     [theme.breakpoints.up("sm")]: {
