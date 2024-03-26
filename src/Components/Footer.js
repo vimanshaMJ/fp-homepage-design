@@ -18,14 +18,20 @@ export default function Footer() {
         fontSize: "0.9rem",
       }}
     >
-      <Box sx={{ display: "flex" }}>
+      <Box sx={{ display: "flex", justifyContent: "space-between" }}>
         <Box sx={{ display: "flex", alignItems: "center" }}>
           <img src={facebook} alt="" className={classes.socialIcon} />
           <img src={twitter} alt="" className={classes.socialIcon} />
           <img src={instagram} alt="" className={classes.socialIcon} />
           <img src={youtube} alt="" className={classes.socialIcon} />
         </Box>
-        <Box sx={{ display: "flex", marginLeft: "700px" }}>
+        <Box
+          sx={{
+            display: "flex",
+            fontSize: "small",
+          }}
+          className={classes.footerTextBox1}
+        >
           <Typography variant="p" sx={{ padding: "0 20px", color: "#747480" }}>
             Blog
           </Typography>
@@ -37,12 +43,25 @@ export default function Footer() {
           </Typography>
         </Box>
       </Box>
-      <Box sx={{ display: "flex", marginTop: "10px" }}>
-        <Typography variant="p" sx={{ color: "#747480" }}>
+      <Box
+        sx={{
+          display: "flex",
+          marginTop: "10px",
+          justifyContent: "space-between",
+        }}
+      >
+        <Typography
+          variant="p"
+          sx={{ color: "#747480", fontSize: "small" }}
+          className={classes.copyright}
+        >
           ©2021 www.funreralspage.com. All rights reserved.
         </Typography>
 
-        <Box sx={{ display: "flex", marginLeft: "430px" }}>
+        <Box
+          sx={{ display: "flex", fontSize: "small" }}
+          className={classes.footerTextBox1}
+        >
           <Typography variant="p" sx={{ color: "#747480", padding: "0 20px" }}>
             Cookie Policy
           </Typography>

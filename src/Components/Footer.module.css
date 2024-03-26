@@ -1,6 +1,11 @@
 .socialIcon {
-  width: 25px;
+  width: 20px;
   height: auto;
   padding: 0;
   margin-right: 20px;
+}
+
+@media (max-width: 1400px) {
+  .footerTextBox1 {
+  }
 }
