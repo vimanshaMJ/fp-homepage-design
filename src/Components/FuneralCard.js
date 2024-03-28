@@ -76,7 +76,13 @@ export default function FuneralCard() {
 
           <Typography variant="p" sx={{ fontSize: "small", fontWeight: "600" }}>
             12 days ago
-            <FmdGoodIcon sx={{ padding: "0 2px 0 15px" }} />
+            <FmdGoodIcon
+              sx={{
+                position: "relative",
+                margin: "0 2px -5px 15px",
+                width: "20px",
+              }}
+            />
             <span className={classes.span2}>London</span>
           </Typography>
         </Box>
