@@ -8,10 +8,6 @@
 .avatar {
   margin-left: 10px;
 }
-.testclass {
-  padding-left: 0 !important;
-  padding-right: 0 !important;
-}
 
 @media (max-width: 1250px) {
   .span1 {

@@ -6,23 +6,22 @@ export default function SearchBtn() {
   const Search = styled("div")(({ theme }) => ({
     position: "relative",
     color: "grey",
-    borderRadius: theme.shape.borderRadius,
     backgroundColor: alpha(theme.palette.common.white, 0.9),
     "&:hover": {
       backgroundColor: alpha(theme.palette.common.white, 0.7),
     },
-    marginRight: theme.spacing(4),
-    marginLeft: 0,
+
+    borderRadius: "30px",
     width: "100%",
 
-    [theme.breakpoints.up("md")]: {
-      marginLeft: theme.spacing(20),
-      width: "100%",
-    },
-    [theme.breakpoints.up("lg")]: {
-      marginLeft: theme.spacing(70),
-      width: "auto",
-    },
+    // [theme.breakpoints.up("md")]: {
+    //   marginLeft: theme.spacing(20),
+    //   width: "100%",
+    // },
+    // [theme.breakpoints.up("lg")]: {
+    //   marginLeft: theme.spacing(70),
+    //   width: "auto",
+    // },
   }));
 
   const StyledInputBase = styled(InputBase)(({ theme }) => ({

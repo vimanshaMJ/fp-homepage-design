@@ -17,7 +17,6 @@ export default function Appbar() {
     <AppBar position="static" className={classes.appbar}>
       <Container>
         <Toolbar
-          classname={classes.testclass}
           sx={{
             paddingLeft: "0 !important",
             paddingRight: "0 !important",
@@ -70,22 +69,33 @@ export default function Appbar() {
         </Toolbar>
       </Container>
 
-      <Toolbar sx={{ backgroundColor: "#5A189A" }}>
-        <Container>
-          <Box sx={{ flexGrow: 1, display: "flex", alignItems: "center" }}>
+      <Toolbar
+        sx={{
+          backgroundColor: "#5A189A",
+          paddingLeft: "0 !important",
+          paddingRight: "0 !important",
+        }}
+      >
+        <Container sx={{ display: "flex", justifyContent: "space-between" }}>
+          <Box
+            sx={{
+              display: "flex",
+              alignItems: "center",
+              width: "fit-content",
+            }}
+          >
             <Typography
               variant="h5"
               sx={{
                 fontFamily: "lato",
                 fontWeight: 700,
                 color: "white",
-                paddingLeft: "2%",
-                flexGrow: 1,
-                textAlign: "center",
               }}
             >
               Obituaries
             </Typography>
+          </Box>
+          <Box sx={{ display: "flex" }}>
             <SearchBtn />
           </Box>
         </Container>
