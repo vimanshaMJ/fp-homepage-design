@@ -16,7 +16,14 @@ export default function Appbar() {
   return (
     <AppBar position="static" className={classes.appbar}>
       <Container>
-        <Toolbar>
+        <Toolbar
+          classname={classes.testclass}
+          sx={{
+            paddingLeft: "0 !important",
+            paddingRight: "0 !important",
+            justifyContent: "space-between",
+          }}
+        >
           <Typography
             variant="h4"
             sx={{
@@ -45,15 +52,20 @@ export default function Appbar() {
             </Typography>
           </Typography>
 
-          <FavoriteBorderOutlinedIcon
-            sx={{ color: "#5A189A", padding: "0 2% 0 430px" }}
-          />
+          <Box sx={{ display: "flex", alignItems: "center" }}>
+            <FavoriteBorderOutlinedIcon
+              sx={{ color: "#5A189A", margin: "0 5px" }}
+            />
 
-          <FilledButton buttonText="LIST YOUR BUSINESS" />
-          <OutlinedButton buttonText="NEWS FEED" />
+            <FilledButton buttonText="LIST YOUR BUSINESS" />
+            <OutlinedButton buttonText="NEWS FEED" />
 
-          <Box sx={{ flexGrow: 1, display: "flex" }} className={classes.avatar}>
-            <Avatar alt="" src={avatar} />
+            <Box
+              sx={{ flexGrow: 1, display: "flex" }}
+              className={classes.avatar}
+            >
+              <Avatar alt="" src={avatar} />
+            </Box>
           </Box>
         </Toolbar>
       </Container>

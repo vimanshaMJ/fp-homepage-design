@@ -13,8 +13,7 @@ export default function OutlinedButton({ buttonText }) {
           backgroundColor: "white",
           color: "#5A189A",
           border: "2px solid #5A189A",
-          padding: "8px 40px",
-          marginLeft: "10px",
+          margin: "0 8px",
           fontWeight: 700,
         }}
       >

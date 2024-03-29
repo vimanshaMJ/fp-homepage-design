@@ -79,7 +79,7 @@ export default function FuneralCard() {
             <FmdGoodIcon
               sx={{
                 position: "relative",
-                margin: "0 2px -5px 15px",
+                margin: "0 2px -6px 15px",
                 width: "20px",
               }}
             />

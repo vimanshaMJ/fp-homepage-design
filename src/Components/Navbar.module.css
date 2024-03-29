@@ -6,14 +6,15 @@
   background-color: white !important;
 }
 .avatar {
-  padding-left: 3%;
+  margin-left: 10px;
+}
+.testclass {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
 }
 
 @media (max-width: 1250px) {
   .span1 {
     padding-left: 3px;
-  }
-  .avatar {
-    padding-left: 1%;
   }
 }
