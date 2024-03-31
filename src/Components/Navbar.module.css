@@ -5,23 +5,39 @@
 .appbar {
   background-color: white !important;
 }
-.avatar {
-  margin-left: 10px;
-}
 
 @media (max-width: 1250px) {
   .span1 {
     padding-left: 3px;
   }
 }
-@media (max-width: 600px) {
+@media (max-width: 700px) {
   .navbarTitle {
-    font-size: 1.6rem;
+    font-size: 1.8rem !important;
   }
   .navbarTitleDec {
-    font-size: 0.8rem;
+    font-size: 0.9rem !important;
   }
   .navbarSubTitle {
-    font-size: 1rem;
+    font-size: 1.2rem !important;
+  }
+  .listBtn,
+  .newsBtn {
+    font-size: 0.7rem !important;
+  }
+}
+@media (max-width: 600px) {
+  .navbarTitleContainer,
+  .navbarbuttonContainer {
+    display: flex;
+    justify-content: center !important;
+    align-items: center;
+    padding: 5px 0;
+  }
+  .navbarSubTitle {
+    display: none;
+  }
+  .searchBtn {
+    width: 100% !important;
   }
 }

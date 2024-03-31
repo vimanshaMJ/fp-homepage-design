@@ -3,7 +3,8 @@ import { styled, alpha } from "@mui/material/styles";
 import InputBase from "@mui/material/InputBase";
 
 export default function SearchBtn() {
-  const Search = styled("div")(({ theme }) => ({
+  const Search = styled("div")(({ theme, className }) => ({
+    className: className,
     position: "relative",
     color: "grey",
     backgroundColor: alpha(theme.palette.common.white, 0.9),
@@ -13,15 +14,6 @@ export default function SearchBtn() {
 
     borderRadius: "30px",
     width: "100%",
-
-    // [theme.breakpoints.up("md")]: {
-    //   marginLeft: theme.spacing(20),
-    //   width: "100%",
-    // },
-    // [theme.breakpoints.up("lg")]: {
-    //   marginLeft: theme.spacing(70),
-    //   width: "auto",
-    // },
   }));
 
   const StyledInputBase = styled(InputBase)(({ theme }) => ({

@@ -126,19 +126,10 @@
     padding: 10px 0;
   }
   .reactIcons {
-    width: 35px;
+    width: 38px;
     margin-right: 5px;
   }
   .heart {
-    width: 20px;
-  }
-}
-@media (max-width: 700px) {
-  .reactIcons {
-    width: 50px;
-    margin-right: 10px;
-  }
-  .heart {
-    width: 30px;
+    width: 28px;
   }
 }

@@ -1,10 +1,11 @@
 import React from "react";
 import Button from "@mui/material-next/Button";
 
-export default function OutlinedButton({ buttonText }) {
+export default function OutlinedButton({ buttonText, className }) {
   return (
     <div>
       <Button
+        className={className}
         size="small"
         variant="outlined"
         sx={{
