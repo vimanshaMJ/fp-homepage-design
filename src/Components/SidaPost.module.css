@@ -23,3 +23,18 @@
     margin: 40px 10px 40px 40px !important;
   }
 }
+@media (max-width: 1050px) {
+  .callNowBtn {
+    margin: 40px 10px 40px 10px !important;
+  }
+}
+@media (max-width: 700px) {
+  .sidaLogo {
+    width: 120px;
+    height: 50px;
+    margin: 0 0 10px 10px;
+  }
+  .callNowBtn {
+    margin: 30px 10px 40px 10px !important;
+  }
+}

@@ -48,10 +48,10 @@ export default function Homepage() {
             spacing={0}
             sx={{ display: { xs: "flex", sm: "none" } }}
           >
-            <Grid item sm={12}>
+            <Grid item xs={12}>
               <Feed />
             </Grid>
-            <Grid item sm={4}>
+            <Grid item xs={6}>
               <Rightbar />
             </Grid>
           </Grid>

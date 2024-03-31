@@ -113,12 +113,32 @@
     margin: 20px 0 0 0 !important;
   }
   .cardTitleBar {
-    text-align: left;
+    text-align: center;
     justify-content: center;
     align-items: center;
-    display: grid;
+    display: grid !important;
+    justify-items: center;
   }
   .moreVertIcon {
-    margin: -25px 0 20px 90px;
+    margin: -25px 0 20px 100px !important;
+  }
+  .manImg {
+    padding: 10px 0;
+  }
+  .reactIcons {
+    width: 35px;
+    margin-right: 5px;
+  }
+  .heart {
+    width: 20px;
+  }
+}
+@media (max-width: 700px) {
+  .reactIcons {
+    width: 50px;
+    margin-right: 10px;
+  }
+  .heart {
+    width: 30px;
   }
 }

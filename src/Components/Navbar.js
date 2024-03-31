@@ -32,6 +32,7 @@ export default function Appbar() {
               color: "#5A189A",
               fontSize: "2rem",
             }}
+            className={classes.navbarTitle}
           >
             Funerals
             <span className={classes.span1}>page</span>.
@@ -46,6 +47,7 @@ export default function Appbar() {
                 color: "black",
                 fontSize: "1rem",
               }}
+              className={classes.navbarTitleDec}
             >
               Making Memories Live
             </Typography>
@@ -91,6 +93,7 @@ export default function Appbar() {
                 fontWeight: 700,
                 color: "white",
               }}
+              className={classes.navbarSubTitle}
             >
               Obituaries
             </Typography>

@@ -14,3 +14,14 @@
     padding-left: 3px;
   }
 }
+@media (max-width: 600px) {
+  .navbarTitle {
+    font-size: 1.6rem;
+  }
+  .navbarTitleDec {
+    font-size: 0.8rem;
+  }
+  .navbarSubTitle {
+    font-size: 1rem;
+  }
+}
