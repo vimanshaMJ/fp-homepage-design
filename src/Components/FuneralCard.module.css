@@ -85,4 +85,12 @@
   }
 }
 @media (max-width: 1000px) {
+  .span2 {
+    padding-right: 20%;
+  }
+}
+@media (max-width: 920px) {
+  .span2 {
+    padding-right: 10%;
+  }
 }

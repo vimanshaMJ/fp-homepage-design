@@ -12,16 +12,46 @@ export default function Homepage() {
       <Appbar />
       <Container>
         <Stack direction="row">
-          <Grid container spacing={0}>
-            <Grid item xs={3}>
+          <Grid
+            container
+            spacing={0}
+            sx={{ display: { md: "flex", sm: "none", xs: "none" } }}
+          >
+            <Grid item md={3}>
               <Sidebar />
             </Grid>
 
-            <Grid item xs={6}>
+            <Grid item md={6}>
               <Feed />
             </Grid>
 
-            <Grid item xs={3}>
+            <Grid item md={3}>
+              <Rightbar />
+            </Grid>
+          </Grid>
+
+          <Grid
+            container
+            spacing={0}
+            sx={{ display: { sm: "flex", md: "none", xs: "none" } }}
+          >
+            <Grid item sm={8}>
+              <Feed />
+            </Grid>
+            <Grid item sm={4}>
+              <Rightbar />
+            </Grid>
+          </Grid>
+
+          <Grid
+            container
+            spacing={0}
+            sx={{ display: { xs: "flex", sm: "none" } }}
+          >
+            <Grid item sm={12}>
+              <Feed />
+            </Grid>
+            <Grid item sm={4}>
               <Rightbar />
             </Grid>
           </Grid>
