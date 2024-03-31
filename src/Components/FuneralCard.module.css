@@ -7,7 +7,7 @@
 .span3 {
   font-weight: 600;
   padding-left: 3px;
-  padding-right: 5px;
+  padding-right: 2px;
   color: black;
 }
 .manImg {
@@ -57,12 +57,16 @@
     margin: -20px 0 0 10px !important;
   }
   .span2 {
+    font-size: smaller;
     padding-right: 40%;
+  }
+  .span3 {
+    font-size: smaller;
   }
 }
 @media (max-width: 1050px) {
-  .bornDied {
-    font-size: 0.65rem !important;
+  .span2 {
+    padding-right: 30%;
   }
   .funeralCardText {
     font-size: 0.85rem !important;
@@ -80,8 +84,5 @@
     width: 20px;
   }
 }
-@media (max-width: 960px) {
-  .span2 {
-    padding-right: 30%;
-  }
+@media (max-width: 1000px) {
 }

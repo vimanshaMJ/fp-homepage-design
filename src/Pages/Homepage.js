@@ -1,6 +1,6 @@
 import Appbar from "../Components/Navbar";
 import React from "react";
-import { Box, Container, Stack } from "@mui/system";
+import { Box, Container, Grid, Stack } from "@mui/material";
 import Sidebar from "../Components/Sidebar";
 import Feed from "../Components/Feed";
 import Rightbar from "../Components/Rightbar";
@@ -12,9 +12,19 @@ export default function Homepage() {
       <Appbar />
       <Container>
         <Stack direction="row">
-          <Sidebar />
-          <Feed />
-          <Rightbar />
+          <Grid container spacing={0}>
+            <Grid item xs={3}>
+              <Sidebar />
+            </Grid>
+
+            <Grid item xs={6}>
+              <Feed />
+            </Grid>
+
+            <Grid item xs={3}>
+              <Rightbar />
+            </Grid>
+          </Grid>
         </Stack>
       </Container>
       <Footer />

@@ -47,3 +47,23 @@
     font-size: 2rem !important;
   }
 }
+@media (max-width: 1000px) {
+  .birksLogo {
+    padding: 40px 0 0 20px;
+  }
+  .birksTitle {
+    font-size: 1.5rem !important;
+  }
+  .cardImg {
+    width: 70px;
+    height: 65px;
+  }
+  .cardDesc {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: small !important;
+  }
+  .rightbarLink {
+    line-height: normal;
+  }
+}
