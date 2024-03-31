@@ -2,7 +2,9 @@
   width: 30px;
   padding: 10px;
 }
-.span1 {
+.span1,
+.span2,
+.span3 {
   font-weight: 600;
   padding-left: 3px;
   padding-right: 5px;
@@ -12,7 +14,7 @@
   padding: 20px;
   width: 80px;
 }
-.span2 {
+.span4 {
   color: #4c1282;
 }
 .donateBtn {
@@ -36,7 +38,6 @@
 .bibliograpy {
   color: #720cd4;
   font-weight: 600;
-  margin-left: 270px;
 }
 .hrLine {
   border: 1px solid #f2e4ff;
@@ -44,19 +45,43 @@
 }
 .reactIcons {
   width: 50px;
-  padding: 0 0 15px 15px;
+  margin-right: 10px;
 }
 .heart {
   width: 30px;
-  padding: 0 0 15px 100px;
-}
-.eye {
-  width: 50px;
-  padding: 0 0 20px 15px;
+  margin-right: 10px;
 }
 
 @media (max-width: 1200px) {
   .donateBtn {
     margin: -20px 0 0 10px !important;
+  }
+  .span2 {
+    padding-right: 40%;
+  }
+}
+@media (max-width: 1050px) {
+  .bornDied {
+    font-size: 0.65rem !important;
+  }
+  .funeralCardText {
+    font-size: 0.85rem !important;
+  }
+  .socialIcon {
+    width: 18px;
+  }
+  .bibliograpy {
+    font-size: 0.85rem !important;
+  }
+  .reactIcons {
+    width: 40px;
+  }
+  .heart {
+    width: 20px;
+  }
+}
+@media (max-width: 960px) {
+  .span2 {
+    padding-right: 30%;
   }
 }

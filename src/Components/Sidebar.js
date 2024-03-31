@@ -16,7 +16,6 @@ export default function Sidebar() {
         flex: "1",
         flexDirection: "column",
         textAlign: "left",
-
         padding: "50px 0 50px 0",
       }}
     >

@@ -59,13 +59,17 @@ export default function FuneralCard() {
             Chadwick Brown
           </Typography>
 
-          <Typography variant="p" sx={{ fontSize: "small", color: "#868282" }}>
+          <Typography
+            variant="p"
+            sx={{ fontSize: "small", color: "#868282" }}
+            className={classes.bornDied}
+          >
             Born:
-            <span className={classes.span1}>
+            <span className={classes.span2}>
               12 <sup>th</sup> January 1989
             </span>{" "}
             Died:{" "}
-            <span className={classes.span1}>
+            <span className={classes.span3}>
               24 <sup>th</sup> June 2020
             </span>
           </Typography>
@@ -83,7 +87,7 @@ export default function FuneralCard() {
                 width: "20px",
               }}
             />
-            <span className={classes.span2}>London</span>
+            <span className={classes.span4}>London</span>
           </Typography>
         </Box>
 
@@ -100,6 +104,7 @@ export default function FuneralCard() {
           fontFamily: "lato",
           lineHeight: "1.5",
         }}
+        className={classes.funeralCardText}
       >
         Venenatis, quis risus justo, nisl, lorem venenatis. Nunc, pulvinar amet
         in odio ac tellus suscipit. Nibh commodo auctor vivamus id tincidunt.
@@ -110,11 +115,20 @@ export default function FuneralCard() {
         </a>
       </Typography>
 
-      <Box sx={{ display: "flex", alignItems: "center" }}>
-        <img src={facebook} alt="" className={classes.socialIcon} />
-        <img src={twitter} alt="" className={classes.socialIcon} />
-        <img src={instagram} alt="" className={classes.socialIcon} />
-        <img src={youtube} alt="" className={classes.socialIcon} />
+      <Box
+        sx={{
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "space-between",
+          paddingRight: "25px",
+        }}
+      >
+        <Box sx={{ display: "flex", alignItems: "center" }}>
+          <img src={facebook} alt="" className={classes.socialIcon} />
+          <img src={twitter} alt="" className={classes.socialIcon} />
+          <img src={instagram} alt="" className={classes.socialIcon} />
+          <img src={youtube} alt="" className={classes.socialIcon} />
+        </Box>
 
         <a href="" className={classes.bibliograpy}>
           Bibliography
@@ -122,15 +136,29 @@ export default function FuneralCard() {
       </Box>
       <hr className={classes.hrLine} />
 
-      <img src={rose} alt="" className={classes.reactIcons} />
-      <img src={candle} alt="" className={classes.reactIcons} />
-      <img src={flowers} alt="" className={classes.reactIcons} />
-      <img src={ribbon} alt="" className={classes.reactIcons} />
-      <img src={heart} alt="" className={classes.heart} />
-      <a href="">
-        <img src={comment} alt="" className={classes.reactIcons} />
-      </a>
-      <img src={eye} alt="" className={classes.eye} />
+      <Box
+        sx={{
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "space-between",
+          margin: "0 20px 20px 10px",
+        }}
+      >
+        <Box>
+          <img src={rose} alt="" className={classes.reactIcons} />
+          <img src={candle} alt="" className={classes.reactIcons} />
+          <img src={flowers} alt="" className={classes.reactIcons} />
+          <img src={ribbon} alt="" className={classes.reactIcons} />
+        </Box>
+
+        <Box sx={{ display: "flex", alignItems: "center" }}>
+          <img src={heart} alt="" className={classes.heart} />
+          <a href="">
+            <img src={comment} alt="" className={classes.reactIcons} />
+          </a>
+          <img src={eye} alt="" className={classes.reactIcons} />
+        </Box>
+      </Box>
     </Box>
   );
 }

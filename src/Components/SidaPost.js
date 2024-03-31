@@ -25,6 +25,7 @@ export default function SidaPost() {
           padding: "20px 200px 0 40px",
           fontWeight: "600",
         }}
+        className={classes.sidaPostHeading}
       >
         Make Your Funeral Plans In Advance
       </Typography>

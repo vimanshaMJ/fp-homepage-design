@@ -19,7 +19,7 @@ function CardComponent(item) {
         alignItems: "center",
       }}
     >
-      <img src={item.image} alt="" />
+      <img src={item.image} alt="" className={classes.cardImg} />
       <Box
         sx={{
           paddingTop: "10px",
@@ -122,6 +122,7 @@ export default function Rightbar() {
             lineHeight: "1.2",
             fontFamily: "lato",
           }}
+          className={classes.birksTitle}
         >
           We Are Here For You...
         </Typography>
