@@ -42,6 +42,7 @@ export default function FuneralCard() {
           display: "flex",
           alignItems: "center",
         }}
+        className={classes.cardTitleBar}
       >
         <img src={manImg} alt="" className={classes.manImg} />
 
@@ -55,6 +56,7 @@ export default function FuneralCard() {
           <Typography
             variant="p"
             sx={{ fontWeight: "900", color: "#63019F", fontSize: "1.2rem" }}
+            className={classes.funeralCardName}
           >
             Chadwick Brown
           </Typography>
@@ -86,13 +88,17 @@ export default function FuneralCard() {
                 margin: "0 2px -6px 15px",
                 width: "20px",
               }}
+              className={classes.fmdGoodIcon}
             />
             <span className={classes.span4}>London</span>
           </Typography>
         </Box>
 
         <FilledButton buttonText={"Donate"} className={classes.donateBtn} />
-        <MoreVertIcon sx={{ marginTop: "-15px" }} />
+        <MoreVertIcon
+          sx={{ marginTop: "-15px" }}
+          className={classes.moreVertIcon}
+        />
       </Box>
 
       <Typography

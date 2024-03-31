@@ -94,3 +94,31 @@
     padding-right: 10%;
   }
 }
+@media (max-width: 900px) {
+  .span2 {
+    padding-right: 5px;
+  }
+  .reactIcons {
+    width: 40px;
+  }
+  .heart {
+    width: 25px;
+  }
+}
+@media (max-width: 700px) {
+  .funeralCardName {
+    font-size: medium !important;
+  }
+  .donateBtn {
+    margin: 20px 0 0 0 !important;
+  }
+  .cardTitleBar {
+    text-align: left;
+    justify-content: center;
+    align-items: center;
+    display: grid;
+  }
+  .moreVertIcon {
+    margin: -25px 0 20px 90px;
+  }
+}

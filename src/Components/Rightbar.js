@@ -16,7 +16,7 @@ function CardComponent(item) {
     <Box
       sx={{
         display: "flex",
-        alignItems: "flex-end",
+        alignItems: "center",
       }}
     >
       <img src={item.image} alt="" className={classes.cardImg} />
