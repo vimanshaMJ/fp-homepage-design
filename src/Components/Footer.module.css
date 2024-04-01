@@ -5,5 +5,14 @@
   margin-right: 20px;
 }
 
-@media (max-width: 1400px) {
+@media (max-width: 600px) {
+  .footerTextBox1,
+  .copyright {
+    font-size: 0.7rem !important;
+    padding-left: 0 !important;
+  }
+  .socialIcon {
+    margin-right: 10px;
+    width: 15px;
+  }
 }

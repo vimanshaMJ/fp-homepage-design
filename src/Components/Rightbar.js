@@ -18,6 +18,7 @@ function CardComponent(item) {
         display: "flex",
         alignItems: "center",
       }}
+      className={classes.cardContainer}
     >
       <img src={item.image} alt="" className={classes.cardImg} />
       <Box
@@ -86,6 +87,7 @@ export default function Rightbar() {
           border: "1px solid #E5E5E5",
           borderRadius: "8px",
         }}
+        className={classes.cardBox}
       >
         <Box>
           {cardList.map((item) => (
@@ -108,6 +110,7 @@ export default function Rightbar() {
           margin: "10px 0",
           paddingBottom: "20px",
           backgroundImage: `url(${img2})`,
+          backgroundSize: "cover",
           textAlign: "left",
         }}
       >
@@ -135,6 +138,7 @@ export default function Rightbar() {
             lineHeight: "1.5",
             fontFamily: "lato",
           }}
+          className={classes.birksDesc}
         >
           Venenatis, quis risus justo, nisl, lorem venenatis. Nunc, pulvinar
           amet in odio ac tellus

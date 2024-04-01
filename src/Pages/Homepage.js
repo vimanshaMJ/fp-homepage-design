@@ -46,12 +46,15 @@ export default function Homepage() {
           <Grid
             container
             spacing={0}
-            sx={{ display: { xs: "flex", sm: "none" } }}
+            sx={{
+              display: { xs: "flex", sm: "none" },
+              justifyContent: "center",
+            }}
           >
             <Grid item xs={12}>
               <Feed />
             </Grid>
-            <Grid item xs={6}>
+            <Grid item xs={8}>
               <Rightbar />
             </Grid>
           </Grid>

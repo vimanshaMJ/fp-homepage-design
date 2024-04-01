@@ -1,5 +1,6 @@
 import Box from "@mui/material/Box";
 import Container from "@mui/material/Container";
+import Grid from "@mui/material/Grid";
 import { Typography } from "@mui/material";
 import React from "react";
 import classes from "./Footer.module.css";
@@ -19,6 +20,7 @@ export default function Footer() {
           fontFamily: "lato",
           fontSize: "0.9rem",
         }}
+        className={classes.footer}
       >
         <Box sx={{ display: "flex", justifyContent: "space-between" }}>
           <Box sx={{ display: "flex", alignItems: "center" }}>
@@ -36,19 +38,19 @@ export default function Footer() {
           >
             <Typography
               variant="p"
-              sx={{ paddingLeft: "30px", color: "#747480" }}
+              sx={{ paddingLeft: { xs: "10px", sm: "30px" }, color: "#747480" }}
             >
               Blog
             </Typography>
             <Typography
               variant="p"
-              sx={{ paddingLeft: "30px", color: "#747480" }}
+              sx={{ paddingLeft: { xs: "10px", sm: "30px" }, color: "#747480" }}
             >
               Help / FAQ
             </Typography>
             <Typography
               variant="p"
-              sx={{ paddingLeft: "30px", color: "#747480" }}
+              sx={{ paddingLeft: { xs: "10px", sm: "30px" }, color: "#747480" }}
             >
               Contact Us
             </Typography>
@@ -70,24 +72,31 @@ export default function Footer() {
           </Typography>
 
           <Box
-            sx={{ display: "flex", fontSize: "small" }}
+            sx={{
+              display: "flex",
+              fontSize: "small",
+              textAlign: "right",
+            }}
             className={classes.footerTextBox1}
           >
             <Typography
               variant="p"
-              sx={{ color: "#747480", paddingLeft: "30px" }}
+              sx={{ color: "#747480", paddingLeft: { xs: "10px", sm: "30px" } }}
             >
               Cookie Policy
             </Typography>
             <Typography
               variant="p"
-              sx={{ color: "#747480", paddingLeft: "30px" }}
+              sx={{ color: "#747480", paddingLeft: { xs: "10px", sm: "30px" } }}
             >
               Privacy Policy
             </Typography>
             <Typography
               variant="p"
-              sx={{ color: "#747480", paddingLeft: "30px" }}
+              sx={{
+                color: "#747480",
+                paddingLeft: { xs: "10px", sm: "30px" },
+              }}
             >
               Terms & Conditions
             </Typography>

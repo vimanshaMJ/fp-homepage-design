@@ -19,3 +19,11 @@
   text-decoration: none;
   border-bottom: 1px solid #720cd4;
 }
+
+@media (max-width: 600px) {
+  .previous,
+  .next {
+    font-size: small !important;
+    margin-left: 0;
+  }
+}

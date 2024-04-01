@@ -91,3 +91,24 @@
     line-height: 2;
   }
 }
+@media (max-width: 600px) {
+  .cardBox {
+    margin: 0 !important;
+  }
+  .cardImg {
+    width: 70px;
+    height: 65px;
+  }
+  .cardDesc {
+    padding-right: 5px;
+  }
+  .rightbarLink {
+    line-height: 2;
+  }
+  .birksTitle {
+    font-size: 1.2rem !important;
+  }
+  .birksDesc {
+    font-size: 0.8rem !important;
+  }
+}
