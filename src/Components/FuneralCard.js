@@ -1,6 +1,6 @@
 import Box from "@mui/material/Box";
 import { Typography } from "@mui/material";
-import React from "react";
+import React, { useState } from "react";
 import classes from "./FuneralCard.module.css";
 import img1 from "../Images/img1.png";
 import manImg from "../Images/man.png";
@@ -18,8 +18,19 @@ import ribbon from "../Images/ribbon.png";
 import heart from "../Images/heart.png";
 import comment from "../Images/comment.png";
 import eye from "../Images/eye.png";
+import Chip from "@mui/material/Chip";
+import FavoriteIcon from "@mui/icons-material/Favorite";
+import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
+import Button from "@mui/material/Button";
 
 export default function FuneralCard() {
+  const [like, setLike] = useState(185),
+    [isLike, setIsLike] = useState(false),
+    onLikeButtonClick = () => {
+      setLike(like + (isLike ? -1 : 1));
+      setIsLike(!isLike);
+    };
+
   return (
     <Box
       sx={{
@@ -158,7 +169,35 @@ export default function FuneralCard() {
         </Box>
 
         <Box sx={{ display: "flex", alignItems: "center" }}>
-          <img src={heart} alt="" className={classes.heart} />
+          <Chip
+            icon={
+              <Button
+                sx={{ minWidth: "0", padding: "0 2px" }}
+                className={classes.reactBtn}
+              >
+                {isLike ? (
+                  <FavoriteIcon
+                    sx={{ color: "#720CD4" }}
+                    onClick={onLikeButtonClick}
+                  />
+                ) : (
+                  <FavoriteBorderIcon
+                    sx={{ color: "#720CD4" }}
+                    onClick={onLikeButtonClick}
+                  />
+                )}
+              </Button>
+            }
+            label={like}
+            sx={{
+              color: "#720CD4",
+              backgroundColor: "#F2E4FF",
+              height: "28px",
+              alignItems: "center",
+              marginRight: "10px",
+            }}
+          />
+
           <a href="">
             <img src={comment} alt="" className={classes.reactIcons} />
           </a>
