@@ -22,14 +22,34 @@ import Chip from "@mui/material/Chip";
 import FavoriteIcon from "@mui/icons-material/Favorite";
 import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
 import Button from "@mui/material/Button";
+import Avatar from "@mui/material/Avatar";
 
 export default function FuneralCard() {
-  const [like, setLike] = useState(185),
+  const [like, setLike] = useState(184),
     [isLike, setIsLike] = useState(false),
     onLikeButtonClick = () => {
       setLike(like + (isLike ? -1 : 1));
       setIsLike(!isLike);
     };
+
+  const reactIcons = [
+    {
+      id: 1,
+      img: rose,
+    },
+    {
+      id: 2,
+      img: candle,
+    },
+    {
+      id: 3,
+      img: flowers,
+    },
+    {
+      id: 4,
+      img: ribbon,
+    },
+  ];
 
   return (
     <Box
@@ -161,11 +181,21 @@ export default function FuneralCard() {
           margin: "0 20px 20px 10px",
         }}
       >
-        <Box>
-          <img src={rose} alt="" className={classes.reactIcons} />
-          <img src={candle} alt="" className={classes.reactIcons} />
-          <img src={flowers} alt="" className={classes.reactIcons} />
-          <img src={ribbon} alt="" className={classes.reactIcons} />
+        <Box sx={{ display: "flex", alignItems: "center" }}>
+          {reactIcons.map((icon) => (
+            <Chip
+              avatar={
+                <Avatar src={icon.img} alt="" className={classes.reactIcons1} />
+              }
+              label={like}
+              onClick={onLikeButtonClick}
+              sx={{
+                color: "#720CD4",
+                backgroundColor: "transparent",
+                height: "28px",
+              }}
+            />
+          ))}
         </Box>
 
         <Box sx={{ display: "flex", alignItems: "center" }}>
