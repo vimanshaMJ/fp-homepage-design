@@ -43,7 +43,8 @@
   border: 1px solid #f2e4ff;
   margin: 0px 0 20px 0;
 }
-.reactIcons {
+.reactIcons,
+.eye {
   width: 50px;
   margin-right: 10px;
 }
@@ -74,6 +75,15 @@
   .span3 {
     font-size: smaller;
   }
+  .funeralCardText {
+    font-size: 0.85rem !important;
+  }
+  .reactButton1 {
+    width: 18px;
+  }
+  .reactIcons1 {
+    width: 18px !important;
+  }
 }
 @media (max-width: 1050px) {
   .span2 {
@@ -93,6 +103,9 @@
   }
   .heart {
     width: 20px;
+  }
+  .eye {
+    display: none !important;
   }
 }
 @media (max-width: 1000px) {

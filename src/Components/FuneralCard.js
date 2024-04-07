@@ -231,7 +231,7 @@ export default function FuneralCard() {
           <a href="">
             <img src={comment} alt="" className={classes.reactIcons} />
           </a>
-          <img src={eye} alt="" className={classes.reactIcons} />
+          <img src={eye} alt="" className={classes.eye} />
         </Box>
       </Box>
     </Box>
