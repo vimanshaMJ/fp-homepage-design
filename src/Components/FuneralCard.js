@@ -25,30 +25,44 @@ import Button from "@mui/material/Button";
 import Avatar from "@mui/material/Avatar";
 
 export default function FuneralCard() {
-  const [like, setLike] = useState(184),
-    [isLike, setIsLike] = useState(false),
-    onLikeButtonClick = () => {
-      setLike(like + (isLike ? -1 : 1));
-      setIsLike(!isLike);
-    };
+  const [like, setLike] = useState(184);
+  const [isLike, setIsLike] = useState(false);
+
+  const [counts, setCounts] = useState({
+    rose: 10,
+    candle: 65,
+    flowers: 98,
+    ribbon: 5,
+  });
+
+  const [isLiked, setIsLiked] = useState({
+    rose: false,
+    candle: false,
+    flowers: false,
+    ribbon: false,
+  });
+
+  const likeButtonClick = () => {
+    setLike(like + (isLike ? -1 : 1));
+    setIsLike(!isLike);
+  };
+
+  const onLikeButtonClick = (iconName) => {
+    setCounts((prevCounts) => ({
+      ...prevCounts,
+      [iconName]: prevCounts[iconName] + (isLiked[iconName] ? -1 : 1),
+    }));
+    setIsLiked((prevIsLiked) => ({
+      ...prevIsLiked,
+      [iconName]: !prevIsLiked[iconName],
+    }));
+  };
 
   const reactIcons = [
-    {
-      id: 1,
-      img: rose,
-    },
-    {
-      id: 2,
-      img: candle,
-    },
-    {
-      id: 3,
-      img: flowers,
-    },
-    {
-      id: 4,
-      img: ribbon,
-    },
+    { id: 1, name: "rose", img: rose },
+    { id: 2, name: "candle", img: candle },
+    { id: 3, name: "flowers", img: flowers },
+    { id: 4, name: "ribbon", img: ribbon },
   ];
 
   return (
@@ -184,11 +198,21 @@ export default function FuneralCard() {
         <Box sx={{ display: "flex", alignItems: "center" }}>
           {reactIcons.map((icon) => (
             <Chip
+              key={icon.id}
               avatar={
                 <Avatar src={icon.img} alt="" className={classes.reactIcons1} />
               }
-              label={like}
-              onClick={onLikeButtonClick}
+              label={counts[icon.name]}
+              onClick={() => onLikeButtonClick(icon.name)}
+              icon={
+                <Button sx={{ minWidth: 0, padding: 0 }}>
+                  {isLiked[icon.name] ? (
+                    <FavoriteIcon />
+                  ) : (
+                    <FavoriteBorderIcon />
+                  )}
+                </Button>
+              }
               sx={{
                 color: "#720CD4",
                 backgroundColor: "transparent",
@@ -208,12 +232,12 @@ export default function FuneralCard() {
                 {isLike ? (
                   <FavoriteIcon
                     sx={{ color: "#720CD4" }}
-                    onClick={onLikeButtonClick}
+                    onClick={likeButtonClick}
                   />
                 ) : (
                   <FavoriteBorderIcon
                     sx={{ color: "#720CD4" }}
-                    onClick={onLikeButtonClick}
+                    onClick={likeButtonClick}
                   />
                 )}
               </Button>
