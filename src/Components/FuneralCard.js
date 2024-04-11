@@ -15,7 +15,6 @@ import rose from "../Images/rose.png";
 import candle from "../Images/candle.png";
 import flowers from "../Images/flowers.png";
 import ribbon from "../Images/ribbon.png";
-import heart from "../Images/heart.png";
 import comment from "../Images/comment.png";
 import eye from "../Images/eye.png";
 import Chip from "@mui/material/Chip";
@@ -27,6 +26,9 @@ import Avatar from "@mui/material/Avatar";
 export default function FuneralCard() {
   const [like, setLike] = useState(184);
   const [isLike, setIsLike] = useState(false);
+  const [prevClicked, setPrevClicked] = useState(null);
+
+  const initialCounts = { rose: 10, candle: 65, flowers: 98, ribbon: 5 };
 
   const [counts, setCounts] = useState({
     rose: 10,
@@ -48,14 +50,27 @@ export default function FuneralCard() {
   };
 
   const onLikeButtonClick = (iconName) => {
-    setCounts((prevCounts) => ({
-      ...prevCounts,
-      [iconName]: prevCounts[iconName] + (isLiked[iconName] ? -1 : 1),
-    }));
+    setCounts((prevCounts) => {
+      if (prevClicked && prevClicked !== iconName) {
+        return {
+          ...prevCounts,
+          [prevClicked]: initialCounts[prevClicked],
+          [iconName]: prevCounts[iconName] + (isLiked[iconName] ? -1 : 1),
+        };
+      } else {
+        return {
+          ...prevCounts,
+          [iconName]: prevCounts[iconName] + (isLiked[iconName] ? -1 : 1),
+        };
+      }
+    });
+
     setIsLiked((prevIsLiked) => ({
       ...prevIsLiked,
       [iconName]: !prevIsLiked[iconName],
     }));
+
+    setPrevClicked(iconName);
   };
 
   const reactIcons = [
