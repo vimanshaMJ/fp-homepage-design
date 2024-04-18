@@ -48,8 +48,6 @@ export default function CommentSection() {
     },
   ];
 
-  const [like, setLike] = useState(184);
-  const [isLike, setIsLike] = useState(false);
   const [prevClicked, setPrevClicked] = useState(null);
 
   const initialCounts = {
@@ -72,11 +70,6 @@ export default function CommentSection() {
     flowers: false,
     ribbon: false,
   });
-
-  const likeButtonClick = () => {
-    setLike(like + (isLike ? -1 : 1));
-    setIsLike(!isLike);
-  };
 
   const onLikeButtonClick = (iconName) => {
     setCounts((prevCounts) => {
@@ -121,6 +114,7 @@ export default function CommentSection() {
                 className={classes.commentImg}
               />
             </Grid>
+
             <Grid item md={10}>
               <Box
                 sx={{
@@ -169,15 +163,6 @@ export default function CommentSection() {
                     }
                     label={counts[icon.name]}
                     onClick={() => onLikeButtonClick(icon.name)}
-                    icon={
-                      <Button sx={{ minWidth: 0, padding: 0 }}>
-                        {isLiked[icon.name] ? (
-                          <FavoriteIcon />
-                        ) : (
-                          <FavoriteBorderIcon />
-                        )}
-                      </Button>
-                    }
                     sx={{
                       color: "#720CD4",
                       backgroundColor: "transparent",
@@ -186,6 +171,7 @@ export default function CommentSection() {
                   />
                 ))}
               </Box>
+              <hr className={classes.breakline} />
             </Grid>
           </Box>
         ))}

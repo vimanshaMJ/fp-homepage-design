@@ -81,6 +81,8 @@ export default function FuneralCard() {
     { id: 4, name: "ribbon", img: ribbon },
   ];
 
+  const [showComments, setShowComments] = useState(false);
+
   return (
     <Box
       sx={{
@@ -268,14 +270,15 @@ export default function FuneralCard() {
             }}
           />
 
-          <a href="">
+          <a href="#" onClick={() => setShowComments(!showComments)}>
             <img src={comment} alt="" className={classes.reactIcons} />
           </a>
+
           <img src={eye} alt="" className={classes.eye} />
         </Box>
       </Box>
 
-      <CommentSection />
+      {showComments && <CommentSection />}
     </Box>
   );
 }

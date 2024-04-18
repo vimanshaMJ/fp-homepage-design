@@ -4,3 +4,8 @@
   border-radius: 50%;
   margin: 10px 0;
 }
+.breakline {
+  border: none;
+  height: 1.5px;
+  background-color: white;
+}
