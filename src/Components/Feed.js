@@ -16,10 +16,6 @@ export default function Feed() {
         margin: "50px 20px",
       }}
     >
-      {/* <TheDatePicker label={"From"} />
-      <TheDatePicker label={"To"} />
-      <FilledButton buttonText={"Place a Notice"} /> */}
-
       <FuneralCard />
       <FuneralCard />
       <SidaPost />

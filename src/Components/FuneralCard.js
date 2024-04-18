@@ -22,6 +22,7 @@ import FavoriteIcon from "@mui/icons-material/Favorite";
 import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
 import Button from "@mui/material/Button";
 import Avatar from "@mui/material/Avatar";
+import CommentSection from "./CommentSection";
 
 export default function FuneralCard() {
   const [like, setLike] = useState(184);
@@ -273,6 +274,8 @@ export default function FuneralCard() {
           <img src={eye} alt="" className={classes.eye} />
         </Box>
       </Box>
+
+      <CommentSection />
     </Box>
   );
 }
