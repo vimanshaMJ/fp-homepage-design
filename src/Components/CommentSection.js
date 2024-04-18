@@ -26,6 +26,7 @@ export default function CommentSection() {
       time: "21 minutes ago",
       comment:
         "Mi ultricies dolor, quis risus, risus. Nisi, lacinia feugiat gravida sed tortor neque risus risus diam.",
+      initialCounts: { rose: 32, candle: 12, flowers: 32, ribbon: 43 },
     },
     {
       id: 2,
@@ -34,6 +35,7 @@ export default function CommentSection() {
       time: "21 minutes ago",
       comment:
         "Enim nibh tristique proin pharetra malesuada aenean fames ac, amet. Aliquet eget pellentesque est quis.",
+      initialCounts: { rose: 2, candle: 11, flowers: 23, ribbon: 10 },
     },
     {
       id: 3,
@@ -42,6 +44,7 @@ export default function CommentSection() {
       time: "21 minutes ago",
       comment:
         "Molestie aliquam, lacus dignissim volutpat cras. Aenean neque semper quam praesent morbi venenatis urna tempus.",
+      initialCounts: { rose: 4, candle: 23, flowers: 34, ribbon: 54 },
     },
   ];
 
@@ -49,13 +52,18 @@ export default function CommentSection() {
   const [isLike, setIsLike] = useState(false);
   const [prevClicked, setPrevClicked] = useState(null);
 
-  const initialCounts = { rose: 10, candle: 65, flowers: 98, ribbon: 5 };
+  const initialCounts = {
+    rose: comments[0].initialCounts.rose,
+    candle: comments[0].initialCounts.candle,
+    flowers: comments[0].initialCounts.flowers,
+    ribbon: comments[0].initialCounts.ribbon,
+  };
 
   const [counts, setCounts] = useState({
-    rose: 10,
-    candle: 65,
-    flowers: 98,
-    ribbon: 5,
+    rose: comments[0].initialCounts.rose,
+    candle: comments[0].initialCounts.candle,
+    flowers: comments[0].initialCounts.flowers,
+    ribbon: comments[0].initialCounts.ribbon,
   });
 
   const [isLiked, setIsLiked] = useState({
@@ -105,7 +113,7 @@ export default function CommentSection() {
     <Box sx={{ backgroundColor: "#F9F9F9", padding: "15px 0" }}>
       <Container>
         {comments.map((item) => (
-          <Box sx={{ display: "flex", alignItems: "center" }}>
+          <Box sx={{ display: "flex", alignItems: "start" }}>
             <Grid item md={2}>
               <img
                 src={item.image}
@@ -142,7 +150,13 @@ export default function CommentSection() {
                 </Typography>
               </Box>
 
-              <Box sx={{ display: "flex", alignItems: "center" }}>
+              <Box
+                sx={{
+                  display: "flex",
+                  alignItems: "center",
+                  padding: "10px 0",
+                }}
+              >
                 {reactIcons.map((icon) => (
                   <Chip
                     key={icon.id}
